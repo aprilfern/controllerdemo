@@ -21,7 +21,7 @@ function setup(){
 }
 
 function draw(){
-  let gp = naviagtor.getGamepads()[0];
+  let gp = navigator.getGamepads()[0];
   
   if(!gp){
     fill(0);
@@ -73,7 +73,7 @@ function handleButtons(gp){
     if(currentlyPressed && !previouslyPressed){
       switch(index){
         case 0:
-          drawColor = color(randomw(255), random(255), random(255));
+          drawColor = color(random(255), random(255), random(255));
           rainbow = false;
           break;
           
